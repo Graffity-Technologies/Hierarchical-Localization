@@ -57,7 +57,7 @@ def import_matches(image_ids, database_path, pairs_path, matches_path,
     logging.info('Importing matches into the database...')
 
     with open(str(pairs_path), 'r') as f:
-        pairs = [p.split(' ') for p in f.read().split('\n') if len(p) == 2]
+        pairs = [p.split(' ') for p in f.read().split('\n') if len(p.split(' ')) == 2]
 
     hfile = h5py.File(str(matches_path), 'r')
     db = COLMAPDatabase.connect(database_path)

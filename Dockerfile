@@ -1,5 +1,4 @@
-FROM colmap/colmap:latest
-MAINTAINER Paul-Edouard Sarlin
+FROM graffity/colmap:latest
 RUN apt-get update -y
 RUN apt-get install python3 python3-pip unzip wget -y
 COPY . /app

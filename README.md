@@ -123,7 +123,7 @@ If you report any of the above results in a publication, or use any of the tools
                Tomasz Malisiewicz and
                Andrew Rabinovich},
   booktitle = {CVPR},
-  year      = {2020},
+  year      = {2020}
 }
 ```
 
